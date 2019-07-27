@@ -5,8 +5,5 @@ stage('SCM Checkout')
    
    git 'https://github.com/suryatinku/suryas.git'
 }
-stage('Compile-Package')
-{ def mvnHome = tool name: 'maven', type: 'maven'
-  sh "${mvnHome}/bin/mvn package"
-}
+
 }
